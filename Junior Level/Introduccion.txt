@@ -1,0 +1,12 @@
+-Lenguaje de programacion
+-Interpretado 
+-Orientado a objetos
+-Imperativo
+-Case sensitive (upper and lower case)
+-Basado en prototipos / instancias / classless
+-Tipado debil
+-Lenguaje dinamico
+
+undefined = existe la variable pero no tiene valor
+null = valor vacio, ya esta inicializada
+
