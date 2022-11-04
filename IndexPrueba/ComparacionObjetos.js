@@ -1,5 +1,6 @@
 function cakes (recipe, available){
     //code here
+    //Math.floor around down
 }
 
 //for example
