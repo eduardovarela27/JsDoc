@@ -1,13 +1,11 @@
 function cakes (recipe, available){
-    //code here
-    let calc = 0;
+    if(Object.values(recipe).length > Object.values(available).length){return 0}
+    let calc = 0;let arr =[];
     for (let rec in recipe){
         calc=Math.floor(available[rec]/recipe[rec]);//round down
-        //console.log(`${rec}`);
-        //console.log(`${available[rec]}`);
-        console.log(calc);
+        arr.push(calc); 
     };
-    console.log(`Result: ${calc}`);
+    return Math.min(...arr);
 }
 
 //for example
