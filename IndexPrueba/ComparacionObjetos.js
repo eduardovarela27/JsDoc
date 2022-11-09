@@ -15,9 +15,17 @@
 // cakes(recipe,available);
 //End Cakes
 
-function generateHashtag (str) {
-    let strUpper = str.split(" ").map(s=> s.charAt(0).toUpperCase().concat("",s.slice(1))).join("");
-    return strUpper.length > 140 || strUpper.length === 0 ? false: "#".concat("",strUpper).split(" ").join("");
-  }
-  let str = "";
-  console.log(generateHashtag(str));
+// function generateHashtag (str) {
+//     let strUpper = str.split(" ").map(s=> s.charAt(0).toUpperCase().concat("",s.slice(1))).join("");
+//     return strUpper.length > 140 || strUpper.length === 0 ? false: "#".concat("",strUpper).split(" ").join("");
+//   }
+//   let str = "";
+//   console.log(generateHashtag(str));
+//End generateHastag
+
+function moveZeros(arr) {
+    const zeros = arr.filter(m => m === 0);
+    return arr.filter(m => m !== 0).concat(zeros);
+}
+const test = ['a','b',null,'c','d',1,false,1,3,[],1,9,{},9,0,0,0,false,0,0,[],0,0,0,0,0]
+console.log(moveZeros(test));
