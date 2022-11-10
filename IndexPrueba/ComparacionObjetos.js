@@ -23,9 +23,18 @@
 //   console.log(generateHashtag(str));
 //End generateHastag
 
-function moveZeros(arr) {
-    const zeros = arr.filter(m => m === 0);
-    return arr.filter(m => m !== 0).concat(zeros);
-}
-const test = ['a','b',null,'c','d',1,false,1,3,[],1,9,{},9,0,0,0,false,0,0,[],0,0,0,0,0]
-console.log(moveZeros(test));
+// function moveZeros(arr) {
+//     const zeros = arr.filter(m => m === 0);
+//     return arr.filter(m => m !== 0).concat(zeros);
+// }
+// const test = ['a','b',null,'c','d',1,false,1,3,[],1,9,{},9,0,0,0,false,0,0,[],0,0,0,0,0]
+// console.log(moveZeros(test));
+//End moveZeros
+
+function sumIntervals(intervals) {
+    const long = intervals.flat();//aplanar el arreglo
+    return intervals.map(i => i[1] - i[0]).reduce((a,b)=>a+b);
+  }
+
+  console.log(sumIntervals([[1,2],[6, 10],[11, 15]]));
+  console.log(sumIntervals( [[1,5],[10, 20],[1, 6],[16, 19],[5, 11]]));
